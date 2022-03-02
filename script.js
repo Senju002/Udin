@@ -1,8 +1,3 @@
-
-// To check the scroll position on page load
-// reveal();
-// a
-
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
@@ -57,3 +52,6 @@ trailer3.addEventListener("click", () => {
   trailer3.classList.toggle("active");
 });
 
+// To check the scroll position on page load
+// reveal();
+// a
