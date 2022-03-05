@@ -150,9 +150,9 @@ body {
 
 .card-sensei {
   position: relative;
-  left: 4rem;
+  /* left: 4rem; */
   padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   max-width: 92%;
   height: 90%;
   display: flex;
@@ -172,6 +172,9 @@ body {
 
 .sensei-section {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* End Sensei */
 
@@ -195,9 +198,7 @@ body {
 .creator-list :hover {
   transform-style: preserve-3d;
   transition: all 0.5s;
-  transform: rotateY(-180deg);
-  /* backface-visibility: hidden; */
-  visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 .creator-card img {
@@ -318,6 +319,7 @@ body {
   .card-sensei {
     flex-direction: column;
     max-width: 77%;
+    padding-left: 0rem;
   }
 
   .text-sensei {
