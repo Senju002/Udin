@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 8000px; */
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  margin: 0 2rem 0;
+}
+
+.brand-title {
+  font-size: 2rem;
+  color: rgba(10, 77, 159, 1);
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(10, 77, 159, 1);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.navbar-links li a:hover {
+  color: rgba(10, 77, 159, 0.3);
+  transition: all 0.5s;
+}
+
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+/* End Navbar */
+
+/* Start Landing Page */
+.main-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(https://data.whicdn.com/images/332335753/original.gif);
+  /* background-image: url(about/About-bg.png); */
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50vh;
+  overflow: hidden;
+}
+
+.title-img {
+  padding-top: 60vh;
+  width: 1000px;
+  height: 50%;
+  padding-bottom: 0rem;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-img h1 {
+  margin-top: -2vh;
+
+  color: white;
+  font-size: 1.4rem;
+  font-style: italic;
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+/* End Landing Page */
+
+/* Start Sensei */
+
+.sensei-title {
+  color: rgba(10, 77, 159, 1);
+  padding-top: 3rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.profile-sensei {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-sensei img {
+  margin-top: 2rem;
+  width: 330px;
+  height: 350px;
+}
+
+.profile-sensei h1 {
+  font-size: 3rem;
+}
+
+.card-sensei {
+  position: relative;
+  left: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 92%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  border: solid rgba(10, 77, 159, 1) 5px;
+  border-radius: 50px;
+}
+
+.text-sensei {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-top: 3.9rem;
+  overflow-wrap: break-word;
+}
+
+.sensei-section {
+  overflow: hidden;
+}
+/* End Sensei */
+
+/* Start Creator */
+.creator-title {
+  color: rgba(10, 77, 159, 1);
+  padding-top: 3rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.creator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid rgba(10, 77, 159, 1) 5px;
+  border-radius: 50px;
+  width: 27rem;
+}
+
+.creator-list :hover {
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+  transform: rotateY(-180deg);
+  /* backface-visibility: hidden; */
+  visibility: hidden;
+}
+
+.creator-card img {
+  margin-top: 2rem;
+  width: 350px;
+  height: 350px;
+}
+
+.creator-card h1 {
+  font-size: 5rem;
+}
+
+.Zed {
+  margin-top: -4rem;
+  font-size: 3.5rem;
+}
+
+.Senju {
+  margin-top: -3rem;
+  font-size: 3.5rem;
+}
+
+.creator-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 7rem;
+}
+
+/* End Creator */
+
+/* Start Footer */
+.footer-section {
+  position: relative;
+  /* top: 305vh; */
+  background-color: rgba(10, 77, 159, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  padding-top: 1rem;
+  width: 35%;
+  padding-bottom: 1.1rem;
+}
+
+.footer-text2 {
+  width: 55%;
+  padding-bottom: 2.1rem;
+}
+/* End Footer */
+
+@media (max-width: 800px) {
+  /* Start Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(10, 77, 159, 1);
+  }
+
+  .navbar-links ul li a:hover {
+    color: rgba(10, 77, 159, 1);
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  /* Start Landing Page */
+  .main-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(https://data.whicdn.com/images/314292689/original.gif);
+    background-position: center;
+  }
+  .title-img {
+    width: 400px;
+    height: 50%;
+  }
+  .main-img h1 {
+    margin-top: 1vh;
+    font-size: 0.9rem;
+  }
+  /* Start Sensei */
+
+  .sensei-title {
+    font-size: 3.5rem;
+  }
+
+  .card-sensei {
+    flex-direction: column;
+    max-width: 77%;
+  }
+
+  .text-sensei {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .profile-sensei img {
+    width: 230px;
+    height: 250px;
+  }
+  .profile-sensei h1 {
+    font-size: 2.4rem;
+    margin-bottom: -2rem;
+  }
+
+  /* Star Creator */
+
+  .creator-title {
+    font-size: 3.5rem;
+    margin-bottom: -2rem;
+  }
+  .creator-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .creator-card {
+    margin-top: 4rem;
+    width: 22rem;
+  }
+
+  .creator-card img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .creator-card h1 {
+    font-size: 3rem;
+  }
+  .Zed {
+    margin-top: -2rem;
+    font-size: 2.5rem;
+  }
+
+  .Senju {
+    margin-top: -1rem;
+    font-size: 2.5rem;
+  }
+
+  /* Start Footer */
+  .footer-text {
+    width: 55%;
+  }
+
+  .footer-text2 {
+    width: 90%;
+  }
+}
