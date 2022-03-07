@@ -179,11 +179,21 @@ body {
 /* End Sensei */
 
 /* Start Creator */
+/* Front-Card */
 .creator-title {
   color: rgba(10, 77, 159, 1);
   padding-top: 3rem;
   font-size: 4.5rem;
   text-align: center;
+}
+
+.creator-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 7rem;
 }
 
 .creator-card {
@@ -193,18 +203,29 @@ body {
   border: solid rgba(10, 77, 159, 1) 5px;
   border-radius: 50px;
   width: 27rem;
+  z-index: 1;
+  backface-visibility: hidden;
+  background-color: white;
 }
 
-.creator-list :hover {
-  transform-style: preserve-3d;
-  transition: all 0.5s;
-  transform: rotateY(180deg);
-}
-
-.creator-card img {
+.card-img {
   margin-top: 2rem;
   width: 350px;
   height: 350px;
+  animation: 1s ease-out;
+  transition: 1s ease-in-out;
+}
+
+.creators:hover .creator-card {
+  transition: all 1s;
+  transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.creators:not(:hover) .creator-card {
+  transition: all 1s;
+  transform: rotateY(-360sdeg);
+  cursor: pointer;
 }
 
 .creator-card h1 {
@@ -219,13 +240,59 @@ body {
 .Senju {
   margin-top: -3rem;
   font-size: 3.5rem;
+  padding-bottom: 1rem;
 }
 
-.creator-list {
+/* Back-Card */
+.creators {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-bottom: 7rem;
+  flex-direction: column;
+}
+.card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  border: solid rgba(10, 77, 159, 1) 5px;
+  border-radius: 50px;
+  width: 27rem;
+  transform: rotateY(180deg);
+}
+
+.card-back h1 {
+  margin-top: 0.5rem;
+  font-size: 5rem;
+}
+
+.about-zed {
+  margin-top: -4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.6rem;
+}
+
+.about-senju {
+  margin-top: -2.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.6rem;
+}
+
+.creators:hover .card-back {
+  transition: all 1s;
+  transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.creators:not(:hover) .card-back {
+  transition: all 1s;
+  transform: rotateY(-180sdeg);
+  cursor: pointer;
 }
 
 /* End Creator */
@@ -338,7 +405,7 @@ body {
   }
 
   /* Star Creator */
-
+  /* Front-Card */
   .creator-title {
     font-size: 3.5rem;
     margin-bottom: -2rem;
@@ -346,10 +413,11 @@ body {
   .creator-list {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .creator-card {
     margin-top: 4rem;
-    width: 22rem;
+    width: 20rem;
   }
 
   .creator-card img {
@@ -368,6 +436,27 @@ body {
   .Senju {
     margin-top: -1rem;
     font-size: 2.5rem;
+  }
+
+  /* Back-Card */
+  .card-back {
+    margin-top: 4rem;
+    width: 20rem;
+  }
+
+  .card-back h1 {
+    font-size: 3.5rem;
+  }
+  .about-zed {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .about-senju {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
   }
 
   /* Start Footer */
