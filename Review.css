@@ -375,4 +375,16 @@ body {
     width: 90%;
   }
   /* End Footer Section */
+
+  /* STart Information */
+  .container {
+    margin: 0 0 3rem 0;
+  }
+  /* End Information */
+
+  /* Start Review */
+  .review-caption {
+    transform: translateY(-40vh);
+  }
+  /* End Review */
 }
